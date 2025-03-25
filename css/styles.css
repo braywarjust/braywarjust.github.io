@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     letter-spacing: -0.02em; /* Adjusted the value to reduce kerning */
-}
+    }
 
 header {
     background: #2d2d2d;
@@ -14,8 +14,14 @@ header {
 }
 
 nav {
-    background: white; /* Changed to white background */
-    padding: 20px 0; /* Increased padding to make the nav bar thicker */
+    position: fixed; /* Keeps the nav bar fixed at the top of the screen */
+    top: 0; /* Aligns the nav bar to the top of the viewport */
+    left: 0; /* Aligns the nav bar to the left of the viewport */
+    width: 100%; /* Ensures the nav bar spans the full width of the screen */
+    background: white; /* Background color for the nav bar */
+    padding: 10px 20px; /* Adjust padding for spacing */
+    z-index: 1000; /* Ensures the nav bar stays above other elements */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 nav ul {
