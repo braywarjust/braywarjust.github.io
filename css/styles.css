@@ -52,7 +52,10 @@ nav ul li a:hover {
     width: 100%;
     max-height: 75vh; /* Maximum height for the home page */
     min-height: 700px; /* Ensures the section is always visible */
-    background-color: rgba(27, 27, 27, 0); /* Blank white background for now */
+    background-image: url('../images/placeholder.png'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 .fullscreen-image .overlay-image {
