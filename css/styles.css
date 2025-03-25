@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    letter-spacing: -0.15em; /* Adjusted the value to reduce kerning */
+    letter-spacing: -0.02em; /* Adjusted the value to reduce kerning */
 }
 
 header {
@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background: #4CAF50;
+    background: white; /* Changed to white background */
     padding: 10px 0;
 }
 
@@ -31,9 +31,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: black; /* Changed to black text */
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.9em; /* Slightly smaller font size */
 }
 
 nav ul li a:hover {
