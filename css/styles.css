@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    letter-spacing: 0.02em; /* Adjusted the value to reduce kerning */
+    letter-spacing: -0.07em; /* Adjusted the value to reduce kerning */
 }
 
 header {
