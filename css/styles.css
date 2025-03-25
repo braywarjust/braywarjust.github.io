@@ -68,9 +68,9 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: white;
+    padding: 2px 0;
+    background: #dddddd;
+    color: rgb(29, 29, 29);
     position: relative;
     bottom: 0;
     width: 100%;
