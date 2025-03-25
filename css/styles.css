@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'MADEAvenuePERSONALUSE-Regular';
-    src: url('../fonts/MADEAvenuePERSONALUSE-Regular.otf') format('opentype');
-}
-
 body {
     font-family: Arial, sans-serif; /* Changed to a standard font */
     margin: 0;
