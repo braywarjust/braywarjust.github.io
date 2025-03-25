@@ -73,15 +73,6 @@ nav ul li a:hover {
         max-width: 70%; /* Increase size for tablets and smaller devices */
         max-height: 70%;
     }
-
-    nav ul {
-        flex-direction: column; /* Stack links vertically on smaller screens */
-        gap: 10px; /* Add spacing between links */
-    }
-
-    nav ul li {
-        margin: 0; /* Remove horizontal margin for stacked links */
-    }
 }
 
 @media (max-width: 480px) {
