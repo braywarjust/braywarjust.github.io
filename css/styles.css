@@ -15,7 +15,7 @@ header {
 
 nav {
     background: white; /* Changed to white background */
-    padding: 10px 0;
+    padding: 20px 0; /* Increased padding to make the nav bar thicker */
 }
 
 nav ul {
