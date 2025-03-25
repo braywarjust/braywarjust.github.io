@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'MADEAvenuePERSONALUSE-Regular';
+    src: url('ftc.web\my-tree-care-website\fonts\MADEAvenuePERSONALUSE-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: 'MADEAvenuePERSONALUSE-Regular', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.service {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.call-to-action a {
+    background: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.call-to-action a:hover {
+    background: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
