@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MADEAvenuePERSONALUSE-Regular';
-    src: url('ftc.web\my-tree-care-website\fonts\MADEAvenuePERSONALUSE-Regular.otf') format('truetype');
+    src: url('../fonts/MADEAvenuePERSONALUSE-Regular.otf') format('opentype');
 }
 
 body {
