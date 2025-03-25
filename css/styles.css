@@ -44,40 +44,8 @@ h1 {
     margin: 0;
 }
 
-section {
-    padding: 20px;
-    margin: 10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
     color: #333;
-}
-
-.service {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.call-to-action {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.call-to-action a {
-    background: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.call-to-action a:hover {
-    background: #45a049;
 }
 
 footer {
