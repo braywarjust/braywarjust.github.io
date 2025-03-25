@@ -1,18 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=YourCustomFont:wght@400;700&display=swap');
-
-@font-face {
-    font-family: 'MADE Avenue PERSONAL USE Regular';
-    src: url('..fonts/MADEAvenuePERSONALUSE-Regular.otf') format('otf');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'MADE Avenue PERSONAL USE Regular';
-    src: url('../fonts/MADEAvenuePERSONALUSE-Regular.otf') format('otf');
-    font-weight: 700;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 body {
     font-family: 'Inter', sans-serif; /* Changed to Inter font */
@@ -31,8 +17,11 @@ header {
 
 nav {
     background: white; /* Changed to white background */
-    padding: 20px 0; /* Increased padding to make the nav bar thicker */
-}
+    padding: 10px 0; /* Adjust padding to control the height of the nav bar */
+    max-width: 500px; /* Set a maximum width for the nav bar */
+    margin: 20px auto 0; /* Add top margin to move the nav bar lower */
+    border-radius: 0px; /* Optional: Add rounded corners for a modern look */
+    }
 
 nav ul {
     list-style: none;
@@ -42,8 +31,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline-block; /* Ensures proper spacing between items */
+    margin: 0 25px; /* Adds horizontal spacing between links */
 }
 
 nav ul li a {
@@ -61,7 +50,8 @@ nav ul li a:hover {
 .fullscreen-image {
     position: relative;
     width: 100%;
-    height: 50vh; /* Fullscreen height */
+    max-height: 75vh; /* Maximum height for the home page */
+    min-height: 700px; /* Ensures the section is always visible */
     background-color: rgba(27, 27, 27, 0); /* Blank white background for now */
 }
 
@@ -97,22 +87,26 @@ h2 {
     color: #333;
 }
 
-.header-message {
-    text-align: center;
-    padding: 20px;
-    background-color: #6b6b6b00;
-    color: white;
-    margin: 20px 0;
+.header-box {
+    text-align: center; /* Centers text inside the box */
+    padding: 40px 20px; /* Adds space inside the box */
+    background-color: #ffffff; /* Background color */
+    color: white; /* Text color */
+    margin: 20px auto; /* Centers the box horizontally */
+    min-height: 500px; /* Ensures enough vertical space */
+    border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
-.header-message h2 {
+.header-box h2 {
     margin: 0;
-    font-size: 2em;
+    font-size: 3em; /* Slightly larger font size for the heading */
 }
 
-.header-message p {
-    margin: 10px 0 0;
+.header-box p {
+    margin: 15px 0 0; /* Increased margin for better spacing */
     font-size: 1.2em;
+    line-height: 1.6; /* Added line height for better readability */
+    color: rgb(104, 104, 104);
 }
 
 footer {
@@ -123,8 +117,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.custom-font {
-    font-family: 'YourCustomFont', sans-serif;
 }
