@@ -41,6 +41,12 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.fullscreen-image {
+    width: 100%;
+    height: 100vh; /* Fullscreen height */
+    background-color: white; /* Blank white background for now */
+}
+
 h1 {
     margin: 0;
 }
