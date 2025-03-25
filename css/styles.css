@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: 'MADEAvenuePERSONALUSE-Regular', sans-serif;
+    font-family: Arial, sans-serif; /* Changed to a standard font */
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -93,9 +93,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* Override custom font for Google Reviews widget */
-.elfsight-app-0721a045-0c04-4d87-9cdb-a4f84705e732 {
-    font-family: Arial, sans-serif !important;
 }
