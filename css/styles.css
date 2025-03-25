@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=YourCustomFont:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('../fonts/YourCustomFont.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YourCustomFont';
+    src: url('../fonts/YourCustomFont-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 body {
     font-family: 'Inter', sans-serif; /* Changed to Inter font */
     margin: 0;
@@ -81,6 +97,24 @@ h2 {
     color: #333;
 }
 
+.header-message {
+    text-align: center;
+    padding: 20px;
+    background-color: #2d2d2d;
+    color: white;
+    margin: 20px 0;
+}
+
+.header-message h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-message p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+}
+
 footer {
     text-align: center;
     padding: 2px 0;
@@ -89,4 +123,8 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+.custom-font {
+    font-family: 'YourCustomFont', sans-serif;
 }
