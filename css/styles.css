@@ -8,7 +8,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    letter-spacing: 0.05em; /* Adjust the value as needed */
+    letter-spacing: 0.1em; /* Adjust the value as needed */
 }
 
 header {
