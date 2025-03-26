@@ -6,13 +6,6 @@ body {
     letter-spacing: -0.02em; /* Adjusted the value to reduce kerning */
     }
 
-header {
-    background: #2d2d2d;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-}
-
 nav {
     position: fixed; /* Keeps the nav bar fixed at the top of the screen */
     top: 0; /* Aligns the nav bar to the top of the viewport */
@@ -56,6 +49,7 @@ nav ul li a:hover {
     width: 100%;
     height: 50vh; /* Fullscreen height */
     background-color: rgb(211, 211, 211); /* Blank white background for now */
+    margin-bottom: 50px;
 }
 
 .fullscreen-image .overlay-image {
@@ -82,12 +76,56 @@ nav ul li a:hover {
     }
 }
 
-h1 {
-    margin: 0;
+.header-box {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust height to fit content */
+    background-color: rgb(226, 226, 226); /* Background color */
+    margin-top: 50px;
+    padding: 20px; /* Add padding inside the header box */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack the title and photo boxes vertically */
+    align-items: center; /* Center-align the content horizontally */
+    gap: 20px; /* Add spacing between the title and the photo boxes */
 }
 
-h2 {
+.photo-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the photo boxes horizontally */
+    gap: 20px; /* Add spacing between the photo boxes */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    width: 100%; /* Ensure the container spans the full width */
+}
+
+.header-title {
+    width: 100%;
+    text-align: center; /* Center-align the title */
+}
+
+.header-title h2 {
     color: #333;
+    font-size: 1.8em; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+    padding-bottom: 10px; /* Add spacing below the title */
+}
+
+.photo-box {
+    width: 300px; /* Set a fixed width for the boxes */
+    height: 400px; /* Set a fixed height for the boxes */
+    background-color: white; /* Background color for the boxes */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden; /* Ensures the image stays within the rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    display: flex; /* Center the image inside the box */
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-box img {
+    width: 100%; /* Make the image fill the box */
+    height: 100%; /* Ensure the image covers the box */
+    object-fit: cover; /* Crop the image to fit the box */
+    border-radius: 15px; /* Match the rounded corners of the box */
 }
 
 footer {
@@ -98,4 +136,5 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 0.9em;
 }
