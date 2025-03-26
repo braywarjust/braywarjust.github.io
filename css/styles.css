@@ -134,12 +134,18 @@ nav ul li a:hover {
 
 .photo-box {
     width: calc(50% - 20px); /* Set each photo box to take up 50% of the row minus the gap */
-    background-color: rgba(255, 255, 255, 0); /* Background color for the boxes */
+    background-color: rgb(196, 196, 196); /* Background color for the boxes */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Ensures the image stays within the rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
     position: relative; /* Required for the aspect ratio trick */
     padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625 or 56.25%) */
+    opacity: 0.75; /* Set initial opacity to 80% */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity changes */
+}
+
+.photo-box:hover {
+    opacity: 1; /* Fully visible on hover */
 }
 
 .photo-box img {
@@ -150,6 +156,29 @@ nav ul li a:hover {
     height: 100%; /* Ensure the image covers the box */
     object-fit: cover; /* Crop the image to fit the box */
     border-radius: 15px; /* Match the rounded corners of the box */
+}
+
+.quote-contact {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 40px 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the content */
+    border-top: 2px solid #ddd; /* Optional: Add a top border for separation */
+}
+
+.quote-header h2 {
+    font-size: 1.8em; /* Adjust font size */
+    color: #555555; /* Darker text color */
+    margin-bottom: 20px; /* Add spacing below the header */
+}
+
+.contact-info p {
+    font-size: 1em; /* Standard font size */
+    color: #888888; /* Slightly lighter text color */
+    margin: 5px 0; /* Add spacing between contact details */
+}
+
+.contact-info strong {
+    color: #505050; /* Highlight labels (e.g., Phone, Email) */
 }
 
 footer {
