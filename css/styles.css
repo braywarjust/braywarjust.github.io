@@ -47,12 +47,24 @@ nav ul li a:hover {
 .fullscreen-image {
     position: relative;
     width: 100%;
-    height: 50vh; /* Fullscreen height */
-    background-image: url('../images/background-image.jpg'); /* Path to your background image */
+    height: 60vh; /* Fullscreen height */
+    background-image: url(https://images.squarespace-cdn.com/content/v1/59dfb3df46c3c41919eac60a/1629383822561-UVS1SQVE1V4E4T5S49OI/210416_RTE_DSLR_HarlemTreePruning-3.jpg);
     background-size: cover; /* Ensures the image covers the entire section */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     margin-bottom: 50px; /* Add separation between fullscreen image and content below */
+    overflow: hidden; /* Ensures the pseudo-element stays within the section */
+}
+
+.fullscreen-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 175, 175, 0.527); /* Black overlay with 50% transparency */
+    z-index: 1; /* Place the overlay above the background image */
 }
 
 .fullscreen-image .overlay-image {
@@ -62,6 +74,7 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
     max-width: 50%; /* Adjusted to scale down the image */
     max-height: 50%; /* Adjusted to scale down the image */
+    z-index: 2; /* Place the transparent image above the overlay */
 }
 
 /* Responsive adjustments */
@@ -121,7 +134,7 @@ nav ul li a:hover {
 
 .photo-box {
     width: calc(50% - 20px); /* Set each photo box to take up 50% of the row minus the gap */
-    background-color: white; /* Background color for the boxes */
+    background-color: rgba(255, 255, 255, 0); /* Background color for the boxes */
     border-radius: 15px; /* Rounded corners */
     overflow: hidden; /* Ensures the image stays within the rounded corners */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
