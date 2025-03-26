@@ -12,20 +12,20 @@ nav {
     left: 0; /* Aligns the nav bar to the left of the viewport */
     width: 100%; /* Ensures the nav bar spans the full width of the screen */
     background: white; /* Background color for the nav bar */
-    padding: 10px 20px; /* Adjust padding for spacing */
+    padding: 10px 0; /* Adjust padding for spacing */
     z-index: 1000; /* Ensures the nav bar stays above other elements */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    list-style: none; /* Remove default list styling */
+    margin: 0 auto; /* Center the list horizontally */
+    padding: 0; /* Remove default padding */
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center the links horizontally */
     align-items: center; /* Center the links vertically */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
     text-align: center;
+    max-width: 100%; /* Prevent overflow */
 }
 
 nav ul li {
@@ -159,10 +159,9 @@ nav ul li a:hover {
 }
 
 .quote-contact {
-    background-color: #f9f9f9; /* Light background color */
+    background-color: #f9f9f900; /* Light background color */
     padding: 40px 20px; /* Add padding for spacing */
     text-align: center; /* Center-align the content */
-    border-top: 2px solid #ddd; /* Optional: Add a top border for separation */
 }
 
 .quote-header h2 {
