@@ -4,17 +4,70 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     letter-spacing: -0.02em; /* Adjusted the value to reduce kerning */
-    }
+}
 
+/* General Styles */
 nav {
-    position: fixed; /* Keeps the nav bar fixed at the top of the screen */
-    top: 0; /* Aligns the nav bar to the top of the viewport */
-    left: 0; /* Aligns the nav bar to the left of the viewport */
-    width: 100%; /* Ensures the nav bar spans the full width of the screen */
-    background: white; /* Background color for the nav bar */
-    padding: 10px 0; /* Adjust padding for spacing */
-    z-index: 1000; /* Ensures the nav bar stays above other elements */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 10px 0; /* Consistent padding for all screen sizes */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center; /* Center the nav menu horizontally */
+    align-items: center; /* Center the nav menu vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative; /* Allows positioning of the hamburger menu */
+    width: 100%; /* Ensure the nav bar spans the full width */
+    height: 100%; /* Ensure the container fills the nav's height */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Ensure the menu is visible on desktop */
+    flex-direction: row; /* Horizontal layout for desktop */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Center the links vertically */
+    background: none; /* No background for desktop */
+    position: static; /* Default position for desktop */
+    width: auto; /* Default width for desktop */
+    height: auto; /* Default height for desktop */
+    transition: none; /* No transition for desktop */
+}
+
+.nav-menu li {
+    margin: 0 15px; /* Space between links */
+}
+
+.nav-menu li a {
+    color: rgb(40, 40, 40);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.9em;
+    transition: font-weight 0.3s;
+}
+
+.nav-menu li a:hover {
+    font-weight: 700;
 }
 
 nav ul {
@@ -189,4 +242,78 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 0.9em;
+}
+
+/* Mobile Styles */
+.nav-toggle {
+    position: absolute; /* Position the hamburger menu */
+    left: 20px; /* Align it to the left */
+    display: none; /* Hide the toggle button on desktop */
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 25px 0; /* Slightly increase padding for mobile */
+    }
+
+    .nav-container {
+        justify-content: space-between; /* Space between the hamburger menu and nav menu */
+        align-items: center; /* Ensure vertical alignment */
+        padding: 0 20px; /* Add padding for consistent spacing */
+        width: 100%; /* Ensure the nav bar spans the full width */
+        height: auto; /* Allow the height to adjust based on content */
+        box-sizing: border-box; /* Include padding in the width calculation */
+    }
+
+    .nav-toggle {
+        display: block; /* Show the toggle button on mobile */
+    }
+
+    .nav-menu {
+        display: none; /* Hide the menu by default on mobile */
+        flex-direction: column; /* Stack items vertically for mobile */
+        align-items: center; /* Center-align the menu items */
+        justify-content: flex-start; /* Align items to the top */
+        background: white; /* Add background for mobile menu */
+        position: absolute; /* Position the menu for sliding effect */
+        top: 100%; /* Position below the nav bar */
+        left: 0;
+        width: 100%; /* Full width for mobile menu */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease; /* Smooth sliding effect */
+        z-index: 1000; /* Ensure it appears above other elements */
+    }
+
+    .nav-menu.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    .nav-menu li {
+        margin: 10px 0; /* Add spacing between items */
+        text-align: center;
+        width: 100%; /* Ensure each menu item spans the full width */
+    }
+
+    .nav-menu li a {
+        display: block; /* Ensure links are block-level for better alignment */
+        width: 100%; /* Make links span the full width */
+        padding: 10px 0; /* Add padding for better touch targets */
+        text-align: center; /* Center-align the text */
+    }
+
+    .photo-box {
+        width: 100%; /* Make each photo box take up the full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .fullscreen-image .overlay-image {
+        max-width: 90%; /* Increase size for mobile devices */
+        max-height: 90%;
+    }
 }
