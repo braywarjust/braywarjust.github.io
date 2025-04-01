@@ -317,3 +317,66 @@ footer {
         max-height: 90%;
     }
 }
+
+/* Responsive About Sections */
+.about-section {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00; /* Optional: Add a background color */
+}
+
+.about-section .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.about-section .text {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.about-section .text h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.about-section .text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section img {
+        order: 0;
+    }
+
+    .about-section .text {
+        order: 1;
+    }
+}
+
+/* Blank Section */
+.blank-section {
+    height: 100px; /* Adjust the height as needed */
+    background-color: #f4f4f400; /* Optional: Add a background color */
+}
